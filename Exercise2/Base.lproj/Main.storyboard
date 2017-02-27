@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Exercise2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v2t-bi-Bp7">
+                                <rect key="frame" x="16" y="20" width="343" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="社員登録" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIR-LK-EOD">
+                                        <rect key="frame" x="130.5" y="0.0" width="82" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会社情報" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBO-bj-f1e">
+                                        <rect key="frame" x="0.0" y="24" width="343" height="24"/>
+                                        <color key="backgroundColor" red="1" green="0.83790030534252424" blue="0.024734545511392758" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lBO-bj-f1e" firstAttribute="leading" secondItem="v2t-bi-Bp7" secondAttribute="leading" id="duk-fJ-6l7"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SHj-Ku-0zv">
+                                <rect key="frame" x="16" y="139" width="343" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3DJ-L8-9LP">
+                                        <rect key="frame" x="0.0" y="0.0" width="107.5" height="30"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="お名前 ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name=".HiraKakuInterface-W3"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="*">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.11183061346261558" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name=".HiraKakuInterface-W3"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="姓" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yV5-dq-0iw">
+                                        <rect key="frame" x="117.5" y="0.0" width="108" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jGv-SE-gXh">
+                                        <rect key="frame" x="235.5" y="0.0" width="107.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zal-7I-ibd">
+                                <rect key="frame" x="16" y="199" width="343" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WJ-di-DbQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="107.5" height="30"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="フリガナ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name=".HiraKakuInterface-W3"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="*">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.09872923051231608" blue="0.006830028599294713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name=".HiraKakuInterface-W3"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="セイ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kYz-wy-XIg">
+                                        <rect key="frame" x="117.5" y="0.0" width="108" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メイ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="teg-q3-dUP">
+                                        <rect key="frame" x="235.5" y="0.0" width="107.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c7E-lf-Zq7">
+                                <rect key="frame" x="16" y="259" width="343" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMf-IP-lfb">
+                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="32"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="メール   ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name=".HiraKakuInterface-W3"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="*">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.11289522097556781" blue="0.026978379521372609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name=".HiraKakuInterface-W3"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="アドレス">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name=".HiraKakuInterface-W3"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6T5-AC-RAd">
+                                        <rect key="frame" x="171.5" y="0.0" width="171.5" height="32"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aDb-fx-1Co">
+                                <rect key="frame" x="16" y="330" width="343" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAc-Xa-Wvd">
+                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="30"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="生年月日">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name=".HiraKakuInterface-W3"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="*">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.10258613905456671" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name=".HiraKakuInterface-W3"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6JY-p0-QD2">
+                                        <rect key="frame" x="79.5" y="0.0" width="263.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="Rya-9z-5JF">
+                                <rect key="frame" x="16" y="399" width="343" height="28"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InE-DR-jS9">
+                                        <rect key="frame" x="0.0" y="0.0" width="37.5" height="28"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="性別">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name=".HiraKakuInterface-W3"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="*">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.097320822468207502" blue="0.016840268681426185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name=".HiraKakuInterface-W3"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B32-Ve-sXy">
+                                        <rect key="frame" x="107.5" y="0.0" width="235.5" height="29"/>
+                                        <segments>
+                                            <segment title="男性"/>
+                                            <segment title="女性"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="36D-Sl-VTf">
+                                <rect key="frame" x="16" y="466" width="343" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSX-Gz-ny5">
+                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="30"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="電話番号">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name=".HiraKakuInterface-W3"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="*">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.0093617555427757404" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name=".HiraKakuInterface-W3"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="tel1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sPK-Ak-vAL">
+                                        <rect key="frame" x="88.5" y="0.0" width="78" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="tel2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tLL-pk-kjx">
+                                        <rect key="frame" x="176.5" y="0.0" width="78.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="tel3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cnt-yD-HcE">
+                                        <rect key="frame" x="265" y="0.0" width="78" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br0-9N-7lw">
+                                <rect key="frame" x="137" y="534" width="100" height="72"/>
+                                <color key="backgroundColor" red="1" green="0.34232399087914178" blue="0.8803295278277028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="登録">
+                                    <color key="titleColor" red="0.98968777752592585" green="1" blue="0.97431987331850456" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sRz-LG-Z4W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zal-7I-ibd" firstAttribute="top" secondItem="SHj-Ku-0zv" secondAttribute="bottom" constant="30" id="3Xu-30-5wA"/>
+                            <constraint firstItem="aDb-fx-1Co" firstAttribute="top" secondItem="c7E-lf-Zq7" secondAttribute="bottom" constant="39" id="3rT-iB-R7w"/>
+                            <constraint firstItem="SHj-Ku-0zv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ABm-UA-kCb"/>
+                            <constraint firstItem="zal-7I-ibd" firstAttribute="top" secondItem="SHj-Ku-0zv" secondAttribute="bottom" constant="30" id="AYm-dU-76D"/>
+                            <constraint firstItem="Rya-9z-5JF" firstAttribute="top" secondItem="aDb-fx-1Co" secondAttribute="bottom" constant="39" id="BBt-Ow-rWr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="36D-Sl-VTf" secondAttribute="trailing" id="L2V-Bs-A9q"/>
+                            <constraint firstItem="br0-9N-7lw" firstAttribute="top" secondItem="36D-Sl-VTf" secondAttribute="bottom" constant="46" id="LUw-gi-iTM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="br0-9N-7lw" secondAttribute="bottom" constant="61" id="MlB-u1-vwR"/>
+                            <constraint firstItem="SHj-Ku-0zv" firstAttribute="top" secondItem="v2t-bi-Bp7" secondAttribute="bottom" constant="71" id="NUf-mc-FUI"/>
+                            <constraint firstItem="Rya-9z-5JF" firstAttribute="top" secondItem="aDb-fx-1Co" secondAttribute="bottom" constant="39" id="PEl-K8-wem"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rya-9z-5JF" secondAttribute="trailing" id="R9M-6u-2hm"/>
+                            <constraint firstItem="br0-9N-7lw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="121" id="TZ4-o9-lQY"/>
+                            <constraint firstItem="36D-Sl-VTf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ThX-tS-tbG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aDb-fx-1Co" secondAttribute="trailing" id="WIJ-10-EKY"/>
+                            <constraint firstItem="36D-Sl-VTf" firstAttribute="top" secondItem="Rya-9z-5JF" secondAttribute="bottom" constant="39" id="XSZ-Zd-Drg"/>
+                            <constraint firstItem="c7E-lf-Zq7" firstAttribute="top" secondItem="zal-7I-ibd" secondAttribute="bottom" constant="30" id="awv-QT-rFP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zal-7I-ibd" secondAttribute="trailing" id="cST-8Y-F99"/>
+                            <constraint firstItem="br0-9N-7lw" firstAttribute="top" secondItem="36D-Sl-VTf" secondAttribute="bottom" constant="46" id="dKn-Na-Pok"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c7E-lf-Zq7" secondAttribute="trailing" id="doS-1F-f1z"/>
+                            <constraint firstItem="c7E-lf-Zq7" firstAttribute="top" secondItem="zal-7I-ibd" secondAttribute="bottom" constant="30" id="eG6-y6-zho"/>
+                            <constraint firstItem="aDb-fx-1Co" firstAttribute="top" secondItem="c7E-lf-Zq7" secondAttribute="bottom" constant="39" id="eds-j9-kkN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v2t-bi-Bp7" secondAttribute="trailing" id="f1o-dM-j0J"/>
+                            <constraint firstItem="v2t-bi-Bp7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="fzQ-x2-PXP"/>
+                            <constraint firstItem="c7E-lf-Zq7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gL7-aA-ZAl"/>
+                            <constraint firstItem="v2t-bi-Bp7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jAP-ig-mlw"/>
+                            <constraint firstItem="v2t-bi-Bp7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kVk-rn-wkn"/>
+                            <constraint firstItem="Rya-9z-5JF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nH4-tL-R3t"/>
+                            <constraint firstItem="zal-7I-ibd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nRs-oF-DrN"/>
+                            <constraint firstItem="SHj-Ku-0zv" firstAttribute="top" secondItem="v2t-bi-Bp7" secondAttribute="bottom" constant="29" id="rBC-I3-wm4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="br0-9N-7lw" secondAttribute="trailing" constant="122" id="tXr-yZ-PIq"/>
+                            <constraint firstItem="aDb-fx-1Co" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uV4-pE-201"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SHj-Ku-0zv" secondAttribute="trailing" id="ulk-yu-9Mo"/>
+                            <constraint firstItem="36D-Sl-VTf" firstAttribute="top" secondItem="Rya-9z-5JF" secondAttribute="bottom" constant="39" id="vBz-3X-8hs"/>
+                            <constraint firstItem="br0-9N-7lw" firstAttribute="top" secondItem="36D-Sl-VTf" secondAttribute="bottom" constant="38" id="w8L-BQ-Owk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="birthDate" destination="6JY-p0-QD2" id="qOu-xV-L0h"/>
+                        <outlet property="familyName" destination="yV5-dq-0iw" id="wTF-8s-JhX"/>
+                        <outlet property="katafamiName" destination="kYz-wy-XIg" id="bKb-UX-Cee"/>
+                        <outlet property="katayouName" destination="teg-q3-dUP" id="G9g-lG-kaM"/>
+                        <outlet property="mailAddress" destination="6T5-AC-RAd" id="H7g-Xz-Zh4"/>
+                        <outlet property="telPhone1" destination="sPK-Ak-vAL" id="ISd-0w-axx"/>
+                        <outlet property="telPhone2" destination="tLL-pk-kjx" id="RhT-Zx-H3e"/>
+                        <outlet property="telPhone3" destination="cnt-yD-HcE" id="KG1-6X-7oe"/>
+                        <outlet property="yourName" destination="jGv-SE-gXh" id="q7j-U4-Rx1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
